@@ -7,7 +7,7 @@ This program was created in python for a school project. It runs on the command 
 
 
 [![asciicast](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb.png)](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb)
-
+![](data/movie_alt.mov)
 
 > This is a python command line interface for making random passwords.
 
