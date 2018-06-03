@@ -3,7 +3,7 @@
 
 This program was created in python for a school project. It runs on the command line. It can create passwords of diferent lengths and you can have a seed of your choice.
 
-[![asciicast](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb.png)](https://asciinema.org/a/https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb)
+[![asciicast](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb.png)](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb)
 
 
 
