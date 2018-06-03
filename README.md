@@ -1,13 +1,20 @@
 # PythonPasswordGenerator
-> This is a python command line interface for making random passwords.
-
 This program was created in python for a school project. It runs on the command line. It can create passwords of diferent lengths and you can have a seed of your choice.
+
+
+
+![](data/artifact.png)
+
 
 [![asciicast](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb.png)](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb)
 
 
+> This is a python command line interface for making random passwords.
+
 
 ![](header.png)
+
+
 ## prerequisites
 you need to install python
 * python 3 - [Python](https://www.python.org/)
