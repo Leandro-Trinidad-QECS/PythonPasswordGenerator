@@ -1,12 +1,7 @@
 # !/usr/bin/python
 import random, string,math
 import time
-from tkinter import *
-
-from tkinter import messagebox
-
-top = Tk()
-top.geometry("300x300")
+import argparse
 
 def generate_password(password_length,add_lowerCase,add_upperCase,add_numbers,add_specialChar,seed):
 # The main function that does the generating of the passwords
@@ -64,63 +59,43 @@ def checkbutton(input):
     if input == 1:
         return True
     return False
-def checkNum(name):
-    # checks if the user input is a number
-    max_Try = 0
-    while max_Try <= 3:
-        try:
-            user_input = int(input(name))
-            return user_input
-        except:
-            print("try again")
-            max_Try +=1
+def checkNum(numput):
+    try:
+        return int(numput)
+    except:
+        print(numput + " is not a number")
+        return 6
+
     exit(0)
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-l', action='store', dest='pass_length',
+                    help='Password length',required=True)
+    parser.add_argument('-lc', action='store_true', default=False,
+                    dest='lowerCase_switch',required=True,
+                    help='Add lowercase to passwords')
+    parser.add_argument('-uc', action='store_true', default=False,
+                    dest='upperCase_switch',
+                    help='Add uppercase to passwords')
+    parser.add_argument('-n', action='store_true', default=False,
+                    dest='number_switch',
+                    help='Add numbers to passwords')
+    parser.add_argument('-sc', action='store_true', default=False,
+                    dest='specialCharCase_switch',
+                    help='Add special characters to passwords')
+    parser.add_argument('-s', action='store', dest='seed',
+                    help='Seed')
+    results = parser.parse_args()
+    length = checkNum(results.pass_length)
+    lowercase = results.lowerCase_switch
+    uppercase = results.upperCase_switch
+    numbers = results.number_switch
+    specialChar = results.specialCharCase_switch
+    seed = results.seed
 
 
 
-    
+    print("----------  %s  ----------" % (generate_password(length,lowercase,uppercase,numbers,specialChar,seed)))
 
-
-CheckVar1 = IntVar()
-CheckVar2 = IntVar()
-CheckVar3 = IntVar()
-CheckVar4 = IntVar()
-C1 = Checkbutton(top, text = "lowercase letters", variable = CheckVar1, \
-                 onvalue = 1, offvalue = 0, height=1, \
-                 width = 20, )
-C2 = Checkbutton(top, text = "uppercase letters", variable = CheckVar2, \
-                 onvalue = 1, offvalue = 0, height=1, \
-                 width = 20)
-C3 = Checkbutton(top, text = "numbers", variable = CheckVar3, \
-                 onvalue = 1, offvalue = 0, height=1, \
-                 width = 20)
-C4 = Checkbutton(top, text = "special characters", variable = CheckVar4, \
-                 onvalue = 1, offvalue = 0, height=1, \
-                 width = 20)
-
-lengths = Label(top, text = "Password Length")
-lengths.pack()
-lengthsentry = Entry(top, bd = 0)
-lengthsentry.pack()
-print(lengthsentry.get())
-C1.pack()
-C2.pack()
-C3.pack()
-C4.pack()
-seed = Label(top, text = "Seed")
-seed.pack()
-seedentry = Entry(top, bd = 0)
-seedentry.pack()
-
-
-      
-
-
-#print("----------  %s  ----------" % (generate_password(length,lowercase,uppercase,numbers,specialChar,seed)))
-top.mainloop()
-length = checkNum("Password Length ")
-lowercase = checkBool("Add Lowercase? ")
-uppercase = checkBool("Add UpperCase? ")
-numbers = checkBool("Add numbers? ")
-specialChar = checkBool("Add special character? ")
-seed = str(input("seed "))
+if __name__ == '__main__':
+    main()
