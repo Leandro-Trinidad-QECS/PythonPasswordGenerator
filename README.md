@@ -62,13 +62,28 @@ python3 password-generator.py -l 6 -sc
 ```
 ![](data/Specialchar.png)
 
-You can also mix and match the options
+
+
+
+> You can mix and match the options
+
+
 ```sh
 python3 password-generator.py -l 20 -lc -uc -n -sc
 ```
 ![](data/MixMatch.png)
 
 
+> or you can use a seed
+whatever letters you use in the seed, the program will choose randomly from those to be part of your newly generated password.
+
+
+```sh
+python3 password-generator.py -l 20 -s password
+```
+
+
+![](data/seed.png)
 ## Contributing
 
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
