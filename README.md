@@ -63,6 +63,10 @@ python3 password-generator.py -l 6 -sc
 ![](data/Specialchar.png)
 
 You can also mix and match the options
+```sh
+python3 password-generator.py -l 20 -lc -uc -n -sc
+```
+![](data/MixMatch.png)
 
 
 ## Contributing
