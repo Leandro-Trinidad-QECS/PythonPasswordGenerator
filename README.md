@@ -21,6 +21,50 @@ Download - [Python Password generator](https://github.com/Leandro-Trinidad-QECS/
 
 A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
 
+> Shows how you can use it
+
+
+![](data/Usage.png)
+```sh
+python3 password-generator.py -h
+```
+> options
+```sh
+python3 password-generator.py [OPTIONS]
+```
+```sh
+  -l              How long you want the password to be
+  -lc             Make your password have lowercase letters
+  -uc             Make your password have uppercase letters
+  -n              Make your password have numbers
+  -sc             Make your password have Special characters
+  -s SEED         Seed, what letters/numbers you want to be included in your password
+
+```
+> lowercase letters
+```sh
+python3 password-generator.py -l 6 -lc
+```
+![](data/lowercase.png)
+> uppercase letters
+```sh
+python3 password-generator.py -l 6 -uc
+```
+![](data/uppercase.png)
+> numbers
+```sh
+python3 password-generator.py -l 6 -n
+```
+![](data/numbers.png)
+> special characters
+```sh
+python3 password-generator.py -l 6 -sc
+```
+![](data/Specialchar.png)
+
+You can also mix and match the options
+
+
 ## Contributing
 
 1. Fork it (<https://github.com/yourname/yourproject/fork>)
