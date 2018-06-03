@@ -3,7 +3,7 @@ This program was created in python for a school project. It runs on the command 
 
 
 
-![](data/artifact_opt.png)
+![](data/artifact_opt1.png)
 
 
 [![asciicast](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb.png)](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb)
