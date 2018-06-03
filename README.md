@@ -4,7 +4,9 @@
 This program was created in python for a school project. It runs on the command line. It can create passwords of diferent lengths and you can have a seed of your choice.
 
 ![](header.png)
-
+## prerequisites
+you need to install python
+* python 3 - [Python](https://www.python.org/)
 ## Installation
 
 ### OS X & Linux:
