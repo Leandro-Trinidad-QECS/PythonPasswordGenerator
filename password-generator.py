@@ -70,9 +70,9 @@ def checkNum(numput):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('-l', action='store', dest='pass_length',
-                    help='Password length',required=True)
+                    help='Password length')
     parser.add_argument('-lc', action='store_true', default=False,
-                    dest='lowerCase_switch',required=True,
+                    dest='lowerCase_switch',
                     help='Add lowercase to passwords')
     parser.add_argument('-uc', action='store_true', default=False,
                     dest='upperCase_switch',
