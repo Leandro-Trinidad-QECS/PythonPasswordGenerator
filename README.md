@@ -3,7 +3,7 @@ This program was created in python for a school project. It runs on the command 
 
 
 
-![](data/artifact_opt1.png)
+![](https://imgur.com/NsGSiNb)
 
 
 [![asciicast](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb.png)](https://asciinema.org/a/SengOaNF0rOhfoqdIPfpHR8cb)
@@ -40,7 +40,7 @@ A few motivating and useful examples of how your product can be used. Spice this
 > Shows how you can use it
 
 
-![](data/Usage.png)
+![](https://imgur.com/WnXH4Xv)
 ```sh
 python3 password-generator.py -h
 ```
@@ -61,22 +61,22 @@ python3 password-generator.py [OPTIONS]
 ```sh
 python3 password-generator.py -l 6 -lc
 ```
-![](data/lowercase.png)
+![](https://imgur.com/KHnFlLL)
 > uppercase letters
 ```sh
 python3 password-generator.py -l 6 -uc
 ```
-![](data/uppercase.png)
+![](https://imgur.com/1QIhf54)
 > numbers
 ```sh
 python3 password-generator.py -l 6 -n
 ```
-![](data/numbers.png)
+![](https://imgur.com/snGRJ92)
 > special characters
 ```sh
 python3 password-generator.py -l 6 -sc
 ```
-![](data/Specialchar.png)
+![](https://imgur.com/WZi3JeU)
 
 
 
@@ -87,7 +87,7 @@ python3 password-generator.py -l 6 -sc
 ```sh
 python3 password-generator.py -l 20 -lc -uc -n -sc
 ```
-![](data/MixMatch.png)
+![](https://imgur.com/MS3SV1c)
 
 
 > or you can use a seed
@@ -99,4 +99,4 @@ python3 password-generator.py -l 20 -s password
 ```
 
 
-![](data/seed.png)
+![](https://imgur.com/Wkt93A4)
