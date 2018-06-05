@@ -1,14 +1,10 @@
-int vcc = 2; //attach pin 2 to vcc
-int trig = 3; // attach pin 3 to Trig
-int echo = 4; //attach pin 4 to Echo
-int gnd = 5; //attach pin 5 to GND
 
+int trig = 3; // attach pin 3 to Trig
+int echo = 4; //attach pin 4 to
 void setup() {
 
-pinMode (vcc,OUTPUT);
-pinMode (gnd,OUTPUT);
 // initialize serial communication:
-Serial.begin(9600);
+Serial.be
 }
 
 void loop()
